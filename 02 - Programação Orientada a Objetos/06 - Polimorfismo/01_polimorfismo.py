@@ -12,7 +12,6 @@ class Avestruz(Passaro):
     def voar(self):
         print("Avestruz não pode voar")
 
-
 # NOTE: exemplo ruim do uso de herança para "ganhar" o método voar
 class Aviao(Passaro):
     def voar(self):
@@ -26,3 +25,4 @@ def plano_voo(obj):
 plano_voo(Pardal())
 plano_voo(Avestruz())
 plano_voo(Aviao())
+

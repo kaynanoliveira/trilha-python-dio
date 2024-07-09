@@ -1,4 +1,5 @@
 class Bicicleta:
+    # Atributos da classe bicicleta os atributos são as caracterista da nossa classe.
     def __init__(self, cor, modelo, ano, valor):
         self.cor = cor
         self.modelo = modelo
@@ -16,7 +17,7 @@ class Bicicleta:
         print("Vrummmmm...")
 
     def __str__(self):
-        return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
+        return f"{self.__class__.__name__}: {', '.join([f'{chave} = {valor}' for chave, valor in self.__dict__.items()])}" 
 
 
 b1 = Bicicleta("vermelha", "caloi", 2022, 600)

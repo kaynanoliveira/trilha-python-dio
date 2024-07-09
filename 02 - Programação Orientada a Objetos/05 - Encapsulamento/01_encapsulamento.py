@@ -11,12 +11,12 @@ class Conta:
         # ...
         self._saldo -= valor
 
-    def mostrar_saldo(self):
+    def exibir_saldo(self):
         # ...
         return self._saldo
 
 
-conta = Conta("0001", 100)
-conta.depositar(100)
+conta = Conta("0001")
+conta.depositar(200)
 print(conta.nro_agencia)
-print(conta.mostrar_saldo())
+print(conta.exibir_saldo())
