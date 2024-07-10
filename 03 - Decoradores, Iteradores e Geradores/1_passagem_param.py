@@ -1,17 +1,14 @@
 def mensagem(nome):
-    print("executando mensagem")
-    return f"Oi {nome}"
-
+    print("Imprimindo mensagem...")
+    return f"Olá {nome}"
 
 def mensagem_longa(nome):
-    print("executando mensagem longa")
-    return f"Olá tudo bem com você {nome}?"
-
+    print("Imprimindo mensagem longa...")
+    return f"Olá {nome}, seja bem vindo!"
 
 def executar(funcao, nome):
-    print("executando executar")
+    print("Executando...")
     return funcao(nome)
 
-
-print(executar(mensagem, "Joao"))
-print(executar(mensagem_longa, "Joao"))
+print(executar(mensagem, "Kaynan"))
+print(executar(mensagem_longa, "Kaynan"))
