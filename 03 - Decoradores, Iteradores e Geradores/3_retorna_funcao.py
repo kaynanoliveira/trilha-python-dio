@@ -24,9 +24,10 @@ def calculadora(operacao):
 
 op = calculadora("+")
 print(op(2, 2))
+
 op = calculadora("-")
 print(op(2, 2))
-op = calculadora("*")
-print(op(2, 2))
-op = calculadora("/")
-print(op(2, 2))
+
+print(calculadora("*")(2, 2))
+
+print(calculadora("/")(2, 2))

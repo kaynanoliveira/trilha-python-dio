@@ -1,5 +1,4 @@
 def meu_decorador(funcao):
-
     def envelope():
         print("Executa antes da função")
         funcao()
