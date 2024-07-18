@@ -1,17 +1,17 @@
-def meu_decorador(funcao):
-    def envelope(*args, **kwargs):
-        print("faz algo antes de executar")
-        resultado = funcao(*args, **kwargs)
-        print("faz algo depois de executar")
-        return resultado
+
+def validar(funcao):
+    def valida(x, y):
+        if x < 0 or y < 0:
+            raise ValueError("X e Y não podem ser negativos!")    
+        x *= 2
+        y *= 2   
+        return funcao(x, y)
     
-    return envelope
+    return valida
+
+@validar
+def soma(x, y):
+    return x + y 
 
 
-@meu_decorador
-def ola_mundo(nome, outro_argumento):
-    print(f"Olá mundo {nome}!")
-    return nome.upper()
-
-resultado = ola_mundo("João", 1000)
-print(resultado)
+print(soma(10, 20))
